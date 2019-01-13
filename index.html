@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drew Fulton - Profile Page</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Muli:300|Poiret+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display" rel="stylesheet"
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#wrapper-about">About</a>
+	  <a href="#wrapper-projects">Projects</a>
+	  <a href="#wrapper-skills">Skills</a>
+	  <a href="#wrapper-contact">Contact</a>
+	</div>
+
+	<!-- Use any element to open the sidenav -->
+	<div id="nav-icon1" onclick='openNav()'>
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	</div>
+	
+
+	<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+	<div id="main">
+	  <div id='wrapper-splash'>
+	  	<div class='home-content-wrapper'>
+		  	<div class='hero-image' alt="Mountains"></div>
+			<!-- <div class='pattern-image'></div> -->
+		  	
+		  	<div class='headline'>
+		  		<h1 id='name'>Drew Fulton</h1>
+		  		<h2 id='occupation'>Full stack web developer</h2>
+		  		<h5 id='description'>Focused on the intersection of creative & functional development</h5>
+		  		<div class='learn-more-link'><a href="#wrapper-about">Get to know me</a></div>
+		  	</div>
+	  	</div>
+	  	<div class='wrapper-phone'>
+	  		<div id='phone-icon'></div>
+	  		<div id='phone-number'><a href="tel:+1-908-627-3130">(908)-627-3130</a></div>
+	  	</div>
+	  	<div class='wrapper-email'>
+	  		<div id='email-icon'></div>
+	  		<div id='email-address'><a href="mailto:andrewgfulton@gmail.com">andrewgfulton@gmail.com</a></div>
+	  	</div>
+	  </div>
+	
+
+	  <div id='wrapper-about'>
+	  	<div class='about-grid'>
+		  	<div class='left-side-about'>
+		  		
+		  		<div class='personal-details'>
+		  			<div class='profile-picture'></div>
+		  			<p id='details'>
+		  			<span id='heading'>Hey there!</span><br><br>
+		  			I'm Drew Fulton, a full-stack developer based in sunny Philadelphia, who enjoys developing creative web apps that are both functional and intuitive. Admittedly, I'm obsessed with anything web or tech related, particularly new technologies that help simplify day-to-day life. <br><br>
+		  			My favorite part of programming is the never-ending sense that there's always something new to master --- a secret language feature, an established design pattern, an emerging library or -- most importantly -- a different way of looking at a problem. It's like being an artist who gains a new set of paintbrushes with every hour of effort. <br><br>
+		  			Prior to becoming a web developer, I was an account executive and project manager at various advertising agencies in Philadelphia and New Jersey. For 5 years I worked as the client's point of contact as we developed print and digital marketing campaigns for globally recognized consumer and healthcare brands. I enjoyed developing and adhering to process, interfacing with clients, and reveled in the satisfaction of seeing a new campaign come to life.</p>
+		  			<div class='resume-btn'><a href="resume/DrewFultonResume.pdf" target="_blank">View my resume</a></div>
+		  		</div>
+		  	</div>
+		  	<!-- <div class='right-side-about'>
+		  		<div class='dev-about'>
+		  		<p id='heading'>Development Experience</p>
+		  		My web development journey started back in grade school, when I learned how to manipulate HTML & CSS files to personalize my social media profiles. In college I enjoyed tinkering with and customizing themes for various college-related blogs.<br><br> 
+		  		I find building full-functioning CRUD apps to be the most rewarding aspect of my job. I have built a high proficiency in front-end technologies such as HTML5, CSS3 and JavaScript, while also continuing to master the backend frameworks such as Rails and Sinatra. As I continue to develop my skills, I aim to learn node.js to accompany my JS skills as well as Python & Djengo.
+		  		</div>
+		  		<div class='ad-about'>
+		  		<p id='heading'>Advertising Experience</p>
+		  		Prior to becoming a web developer, I was an account executive and project manager at various advertising agencies in Philadelphia and New Jersey. For 5 years I worked as the client's point of contact as we developed print and digital marketing campaigns for globally recognized consumer and healthcare brands. I enjoyed developing and adhering to process, interfacing with clients, and reveled in the satisfaction of seeing a new campaign come to life.</div>
+		  	</div> -->
+		</div>
+	  </div>
+
+	  <div id='wrapper-projects'>
+	  	<div id='heading-portfolio'>Recent Projects</div>
+	  	<div class='projects-grid'>
+	  		<div id='project1'>
+	  			<div class='project1-screenshot'></div>
+	  			<div id='project1-description'><span id='dcsn'>.dcsn</span><br><br> (Decision) is a passion project of mine which combines features from the popular speed-dating app, Tinder, with Google Maps to help users find a cool bar or restaurant in their area. <br><br>
+	  			I built this single-page, mobile-responsive web app only using the core 3 technologies; HTML, CSS & JavaScript while utilizing API calls, click events and DOM manipulation to simulate a live smartphone application. As I continue working on this project, I hopeto add additional Google Places API calls to increase the amount of information available for users and also bring this project to iOS and Android by learning both Swift and Kotlin.	
+	  			</div>
+	  			<div class='links'>
+	  					<div class='live-link'><a href='https://fultondrew.github.io/dcsn/' target="_blank" onClick="window.location.reload()">See it in action!</a></div>
+	  					<div class='github'><a href='https://github.com/FultonDrew/dcsn' target='_blank'>Source Code</a></div>
+	  			</div>
+	  		</div>
+	  		<div id='project2'>
+	  			<div class='project2-screenshot'></div>
+	  			<div id='project2-description'><span id='whereNext'>Where Next?</span><br><br> A travel blog for users to share their favorite travel destinations and any recommendations they have for that destination.<br><br>
+	  			Written in Ruby and built on Rails, Where Next utilizes the popular gems; Devise and CKEditor to expand the functionality of the site. With full CRUD functionality, users can post, update, delete and comment on posts to make this a full social media site. 
+	  			</div>
+	  			<div class='links'>
+	  					<div class='live-link'><a href='http://where-next-blog.herokuapp.com/' target='_blank'>See it in action!</a></div>
+	  					<div class='github'><a href='https://github.com/FultonDrew/NYCDA-Rumbler-Ruby_Rails' target="_blank">Source Code</a></div>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
+
+	  <div id='wrapper-skills'>
+	  	<div id='heading-skills'>Skills</div>
+	  	<div class='skills-grid'>
+	  		<div id='html'></div>
+	  		<div id='css'></div>
+	  		<div id='javascript'></div>
+	  		<div id='jquery'></div>
+	  		<div id='bootstrap'></div>
+	  		<div id='ruby'></div>
+	  		<div id='rails'></div>
+	  		<div id='heroku'></div>
+	  		<div id='github1'></div>
+	  		<div id='git'></div>
+	  	</div>
+	  </div>
+
+	  <div id='wrapper-contact'>
+	  	<div id='heading-contact'>Get in touch!</div>
+	  		<div class='contact-form'>
+			  	<form method="POST" action="https://formspree.io/andrewgfulton@gmail.com">
+				  <input type="email" name="email" placeholder="Your email">
+				  <textarea name="message" placeholder="Message"></textarea>
+				  <button type="submit">Send message</button>
+				</form>
+			</div>
+	  	<div class='contact-grid'>
+	  		<div id='email'><a href="mailto:andrewgfulton@gmail.com" target="_blank"></a></div>
+	  		<div id='phone'><a href="tel:+1-908-627-3130" target="_blank"></a></div>
+	  		<div id='linkedin'><a href='https://www.linkedin.com/in/andrewgfulton/' target="_blank"></a></div>
+	  		<div id='github'><a href='https://github.com/FultonDrew' target="_blank"></a></div>
+	  	</div>
+	  </div>
+</div>
+	  <div class='footer'>
+	  	<footer>
+	  		<div class='icons'>
+	  			<div id='instagram'><a href='https://www.instagram.com/originaldrew/' target="_blank"></a></div>
+	  			<div id='spotify'><a href="https://open.spotify.com/user/fultondrew" target="_blank"></a></div>
+	  			<div id='twitter'><a href="https://twitter.com/fultondrew" target="_blank"></a> </div>
+	  		</div>
+	  		<hr id='line'>
+	  		<div class='copyright'>Copyright © 2019 Drew Fulton</div>
+	  	</footer>
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src='index.js'></script>
+</body>
+</html>
