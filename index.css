@@ -155,9 +155,31 @@
   z-index: 3;
 }
 
+/*Back to top button styling*/
+#backTopBtn {
+  display: block;
+  opacity: 0; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; 
+  border-radius: 50%; 
+  font-size: 2.25vw; 
+}
+
+#backTopBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 .hero-image {
-  background-image: url('https://i.imgur.com/2O9KTBO.jpg');
-  background-size: 100% 100%;
+  background: url('https://i.imgur.com/2O9KTBO.jpg') no-repeat center;
+  background-size: 225% 225%;
   background-repeat: no-repeat;
   border: 4px outset;
   position: relative;
@@ -167,6 +189,20 @@
   height: 60vh;
   z-index: 1;
   opacity: 0.5;
+  /*transform: scale 1s;
+  animation: scale 1s;*/
+  -webkit-animation: scale 2.5s forwards;
+  -webkit-animation-delay: 0.75s;
+  animation: scale 2.5s forwards;
+  animation-delay: 0.75s;
+}
+
+@-webkit-keyframes scale {
+    100% { background-size: 100% 100%;}
+}
+
+@keyframes scale {
+    100% { background-size: 100% 100%;}
 }
 
 
@@ -175,7 +211,7 @@
   border: 3px ridge;
   background-color: rgba(153,204,204,0.9);
   z-index: 4;
-  height: 40vh;
+  height: 32vh;
   /*border-radius: 8px;*/
   width: 35vw;
   position: relative;
@@ -187,20 +223,21 @@
 }
 
 #name {
-    position: relative;
-    color: #004466;
-    left: -1000px;
-    border-bottom: 5px solid;
-    display: inline;
-    text-align: center;
-    width: 95%;
-    font-size: 4.5vw;
-    z-index: 4;
-    font-family: 'Major Mono Display', monospace;
-    -webkit-animation: name 1.25s forwards;
-    -webkit-animation-delay: 1.25s;
-    animation: name 1.25s forwards;
-    animation-delay: 1.25s;
+  position: relative;
+  color: #004466;
+  left: -1000px;
+  border-bottom: 3px solid;
+  display: inline;
+  text-align: center;
+  width: 95%;
+  font-size: 4.5vw;
+  z-index: 4;
+  /*font-family: 'Major Mono Display', monospace;*/
+  font-family: 'Poiret One', cursive;
+  -webkit-animation: name 1.25s forwards;
+  -webkit-animation-delay: 1.25s;
+  animation: name 1.25s forwards;
+  animation-delay: 1.25s;
 }
 
 #occupation {
@@ -308,9 +345,9 @@
   position: absolute;
   overflow: hidden;
   -webkit-animation: phone 0.75s forwards;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 3.5s;
   animation: phone 0.75s forwards;
-  animation-delay: 2s;
+  animation-delay: 3.5s;
 }
 
 @-webkit-keyframes phone {
@@ -338,9 +375,9 @@
   position: absolute;
   overflow: hidden;
   -webkit-animation: email 0.75s forwards;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 3.5s;
   animation: email 0.75s forwards;
-  animation-delay: 2s;
+  animation-delay: 3.5s;
 }
 
 @-webkit-keyframes email {
@@ -454,6 +491,7 @@
   height: 35vh;
   border-radius: 5%;
   box-shadow: 0 48px 76px rgba(0,0,0,0.30), 0 30px 24px rgba(0,0,0,0.22);
+  overflow:hidden;
 }
 
 #details {
@@ -602,7 +640,7 @@
   margin: 4% auto;
   width: 80%;
   height: 40vh;
-  background-image: url('images/dcsn.png');
+  background-image: url('images/dcsn.gif');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   box-shadow: 0 28px 36px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -616,7 +654,7 @@
   margin: 4% auto;
   width: 80%;
   height: 40vh;
-  background-image: url('images/where-next.png');
+  background-image: url('images/where-next.gif');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -916,14 +954,7 @@
   background-image: linear-gradient(to bottom, rgba(228,229,230,1), rgba(01,102,153,1));
 }
 
-.contact-grid {
-  /*border: 1px solid;*/
-  width: 50%;
-  height: 20vh;
-  margin: 5vh auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+
 
 .contact-form {
   /*border: 2px solid;*/
@@ -1006,6 +1037,25 @@ button  {
   grid-column: 2/3;
 }
 
+
+/*Footer styling*/
+
+footer {
+  width: 100%;
+  background-color: #004466;
+  height: 18vh;
+  border:0.5px solid #004466;
+}
+
+.contact-grid {
+  /*border: 1px solid;*/
+  width: 50%;
+  height: 10vh;
+  margin: 1vh auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 #email {
   border: 2.5px solid rgba(255,33,05,0.8);
   grid-column: 1/2;
@@ -1017,8 +1067,8 @@ button  {
   text-align: center;
   font-family: 'Muli', sans-serif;
   border-radius: 60%;
-  width: 20%;
-  height: 8vh;
+  width: 22%;
+  height: 5vh;
   background: url('https://www.myncu.com/wp-content/uploads/2017/05/contact-us-message-icons-1.png') no-repeat center;
   background-size: contain;
   cursor: pointer;
@@ -1035,8 +1085,8 @@ button  {
   text-align: center;
   font-family: 'Muli', sans-serif;
   border-radius: 60%;
-  width: 20%;
-  height: 8vh;
+  width: 22%;
+  height: 5vh;
   background: url('https://www.myncu.com/wp-content/uploads/2017/05/contact-us-phone-icon-1.png') no-repeat center;
   background-size: contain;
   cursor: pointer;
@@ -1051,8 +1101,8 @@ button  {
   color:white;
   font-family: 'Muli', sans-serif;
   border-radius: 60%;
-  width: 20%;
-  height: 8vh;
+  width: 22%;
+  height: 5vh;
   background: url('https://mx1.gapintelligence.com/assets/icon-linkedin@2x-7771538961ec9e478c759483c8711090.png') no-repeat center;
   background-size: contain;
   cursor: pointer;
@@ -1067,33 +1117,29 @@ button  {
   color:white;
   font-family: 'Muli', sans-serif;
   border-radius: 60%;
-  width: 20%;
-  height: 8vh;
+  width: 22%;
+  height: 5vh;
   background: url('https://www.shareicon.net/data/512x512/2016/07/09/118298_github_512x512.png') no-repeat center;
   background-size: contain;
   cursor: pointer;
 }
 
 
-/*Footer styling*/
 
-footer {
-  width: 100%;
-  background-color: #004466;
-  height: 18vh;
-  border:0.5px solid #004466;
+#email:hover {
+  background-color: rgba(255,33,05,0.8);
 }
 
-.icons {
-  /*border: 1px solid;*/
-  width: 100%;
-  padding: 15px;
-  height: auto;
-  text-align: center;
+#phone:hover {
+  background-color: rgba(255,33,05,0.8);
 }
 
-.icons:hover {
-  color: blue;
+#linkedin:hover {
+  background-color: rgba(255,33,05,0.8);
+}
+
+#github:hover {
+  background-color: rgba(255,33,05,0.8);
 }
 
 .copyright {
@@ -1106,48 +1152,9 @@ footer {
   color: #EEEFF0;
 }
 
-#instagram {
-  /*border: 1px solid green;*/
-  display: inline-block;
-  margin: 5px auto;
-  width: 3vw;
-  min-height: 2vw;
-  background: url('http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c521.png') no-repeat center;
-  background-size: contain;
-  cursor: pointer;
-}
-
-
-
-#spotify {
-  /*border: 1px solid green;*/
-  display: inline-block;
-  margin: 5px auto;
-  width: 3vw;
-  min-height: 2vw;
-  background: url('http://www.iconarchive.com/download/i98446/dakirby309/simply-styled/Spotify.ico')  no-repeat center;
-  background-size: contain;
-  cursor: pointer;
-}
-
-#twitter {
-  /*border: 1px solid green;*/
-  display: inline-block;
-  margin: 5px auto;
-  width: 3vw;
-  min-height: 2vw;
-  background: url('http://www.stickpng.com/assets/images/58e9196deb97430e819064f6.png') no-repeat center;
-  background-size: contain;
-  cursor: pointer;
-}
-
-#twitter:hover {
-  color: blue;
-}
-
 #line {
   width: 40%;
   color: white;
-  margin: 10px auto;
+  margin: 5px auto;
 }
 
