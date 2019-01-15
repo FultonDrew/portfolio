@@ -4,109 +4,65 @@
   scroll-behavior: smooth; 
 }
 
-/* The side navigation menu */
-.sidenav {
-  height: 100%; 
-  width: 0; 
-  position: fixed; 
-  z-index: 4; 
-  top: 0; 
-  left: 0;
-  background-color: #004466; 
-  overflow-x: hidden; 
-  padding-top: 60px; 
-  transition: 0.5s; 
+#navbar {
+  overflow: hidden;
+  background-color: rgba(0,68,102,0.5);
+  color: white;
+  width: 40vw;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-/*nav icon styling*/
-
-#nav-icon1 {
-  width: 60px;
-  height: 45px;
-  position: sticky;
-  float: right;
-  margin: 50px;
-  cursor: pointer;
-}
-
-#nav-icon1 span{
-  display: block;
-  position: absolute;
-  height: 9px;
-  width: 100%;
-  background: #FF2105;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-}
-
-#nav-icon1 span:nth-child(1) {
-  top: 0px;
-}
-
-#nav-icon1 span:nth-child(2) {
-  top: 18px;
-}
-
-#nav-icon1 span:nth-child(3) {
-  top: 36px;
-}
-
-#nav-icon1.open span:nth-child(1) {
-  top: 18px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
-#nav-icon1.open span:nth-child(2) {
+#navbar, .sticky {
+  width: 50vw;
   opacity: 0;
-  left: -60px;
+  transition-timing-function: ease-in;
+  margin: 0 auto;
+  border: 1px solid;
+  border-radius: 26px;
+  z-index: 999;
+  box-shadow: 0 48px 76px rgba(0,0,0,0.30), 0 30px 24px rgba(0,0,0,0.22);
 }
 
-#nav-icon1.open span:nth-child(3) {
-  top: 18px;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+#navbar a {
+  float: left;
+  width: 1fr;
+  margin: 0 auto;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 1.1vw;
+  /*border-bottom-left-radius: 6px;*/
+  font-family: 'Muli', sans-serif;
+  justify-content: space-evenly;
+  /*border:1px solid;*/
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 25vw;
+  /*width: 100%;*/
+  width: 24vw;
+  margin: 0 auto;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+  width: 40%;
+  margin: 0 auto;
 }
 
 /*Main page content*/
@@ -264,7 +220,7 @@
   padding: 8px;
   font-family: 'Poiret One', cursive;
   text-align: center;
-  background-color: rgba(255,33,05,0.6);
+  background-color: rgba(255,33,05,0.8);
   box-shadow: 0 10px 10px rgba(0,0,0,0.30), 0 4px 4px rgba(0,0,0,0.22);
   font-size: 1em;
   z-index: 4;
@@ -596,6 +552,7 @@
   background-image: url('images/where-next.gif');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  box-shadow: 0 28px 36px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 #project1-description {
@@ -900,17 +857,17 @@
 }
 
 input {
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5em;
-    /*border: 1px solid #c4beb9;*/
-    background: #fff;
-    padding: 0.5em;
-    width: 90%;
-    height: auto;
-    margin: 10px auto;
-    background-color: #EEEFF0;
-    border-radius: 6px;
-    border-style: none;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5em;
+  /*border: 1px solid #c4beb9;*/
+  background: #fff;
+  padding: 0.5em;
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  background-color: #EEEFF0;
+  border-radius: 6px;
+  border-style: none;
 }
 
 input:-webkit-autofill,
@@ -929,21 +886,22 @@ textarea:-webkit-autofill:active  {
 
 textarea {
   font-family: 'Muli', sans-serif;
-    resize: none;
-    cursor: text;
-    white-space: pre-wrap;
-    overflow-wrap: break-word;
-    font-size: 1.5em;
-    color: #666260;
-    min-height: 20vh;
-    /*border: 1px solid #c4beb9;*/
-    background: #fff;
-    padding: 0.5em;
-    transition: all 0.3s ease-in-out;
-    width: 90%;
-    margin: 10px auto;
-    background-color: #EEEFF0;
-    border-radius: 6px;
+  resize: none;
+  cursor: text;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-size: 1.5em;
+  color: #666260;
+  min-height: 25vh;
+  /*border: 1px solid #c4beb9;*/
+  background: #fff;
+  padding: 0.5em;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  margin: 10px auto;
+  background-color: #EEEFF0;
+  border-radius: 6px;
+  border-style: none;
 }
 
 button  {
@@ -1007,7 +965,7 @@ footer {
   width: 22%;
   height: 5vh;
   background: url('https://www.myncu.com/wp-content/uploads/2017/05/contact-us-message-icons-1.png') no-repeat center;
-  background-size: contain;
+  background-size: 80% 80%;
   cursor: pointer;
 }
 
@@ -1025,7 +983,7 @@ footer {
   width: 22%;
   height: 5vh;
   background: url('https://www.myncu.com/wp-content/uploads/2017/05/contact-us-phone-icon-1.png') no-repeat center;
-  background-size: contain;
+  background-size: 80% 80%;
   cursor: pointer;
 }
 
@@ -1162,7 +1120,7 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
   }
   .about-grid {
-    height: 90vh;
+    height: 105vh;
   }
   .profile-picture {
     padding: 8px;
@@ -1175,8 +1133,8 @@ footer {
   #details {
     grid-column: 1/2;
     grid-row: 2/3;
-    width: 80%;
-    font-size: 2.5vw;
+    width: 90%;
+    font-size: 3vw;
     margin: 40px auto;
   }
   .resume-btn {
@@ -1207,7 +1165,7 @@ footer {
     font-size: 6vw;
   }
   #wrapper-projects {
-    height: 140vh;
+    height: 130vh;
   }
   #project1, #project2 {
     margin: 60px auto;
@@ -1256,7 +1214,7 @@ footer {
     justify-content: center;
   }
   #wrapper-skills {
-    height: 60vh;
+    height: 55vh;
   }
   .skills-grid {
     width: 80%;
@@ -1265,8 +1223,11 @@ footer {
     width: 90%;
   }
   .contact-form {
-    width: 90%;
+    width: 80%;
     margin: 35px auto;
+  }
+  .contact-grid {
+    width: 70%;
   }
   input, textarea {
     font-size: 1em;
@@ -1280,5 +1241,14 @@ footer {
   }
   .copyright {
     font-size: 1.8vw;
+  }
+  #navbar, .sticky {
+    width: 85vw;
+  }
+  .sticky {
+    left: 7vw;
+  }
+  #navbar a {
+    font-size: 3.5vw;
   }
 };
