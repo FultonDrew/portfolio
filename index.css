@@ -422,7 +422,7 @@
 #wrapper-projects {
   border: 0.2px solid #E4E5E6;
   width: 100%;
-  height: 140vh;
+  height: 155vh;
   background-color: #E4E5E6;
 }
 
@@ -456,7 +456,7 @@
   grid-row: 1/2;
   width: 90%;
   /*border: 1px solid red;*/
-  height: 27vw;
+  height: 55vh;
   border-radius: 6px;
   display: grid;
   margin: 60px auto;
@@ -472,7 +472,7 @@
   position: relative;
   /*border: 1px solid red;*/
   border-radius: 6px;
-  height: 25vw;
+  height: 55vh;
   display: grid;
   margin: 30px auto;
   background-color: #EEEFF0;
@@ -995,7 +995,7 @@ footer {
 }
 
 /*Mobile responsive media query*/
-@media all and (max-width: 750px) {
+@media all and (max-width: 950px) {
   .home-content-wrapper {
     position: relative;
     width: 90%;
