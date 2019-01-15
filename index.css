@@ -1146,6 +1146,10 @@ footer {
     height: 105vh;
     background-color: #E4E5E6;
   }
+  #wrapper-splash {
+    height: 102vh;
+    background-color: #E4E5E6;
+  }
   #heading-portfolio {
     margin: 55px auto;
     width: 65%;
