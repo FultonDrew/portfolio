@@ -17,7 +17,7 @@ function myFunction() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
+  if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
     document.getElementById("navbar").style.opacity= "100";
     document.getElementById("navbar").classList = "sticky";
     // document.getElementsByClassName("sticky").style.opacity= "100";
