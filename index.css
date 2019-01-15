@@ -1061,7 +1061,7 @@ footer {
     width: 90%;
     position: relative;
     left: 0vw;
-    top: 10vh;
+    top: 7vh;
     box-shadow: 0 48px 76px rgba(0,0,0,0.30), 0 30px 24px rgba(0,0,0,0.22);
   }
   .hero-image {
@@ -1149,7 +1149,7 @@ footer {
     background-color: #E4E5E6;
   }
   #wrapper-splash {
-    height: 105vh;
+    height: 115vh;
     background-color: #E4E5E6;
   }
   #heading-portfolio {
