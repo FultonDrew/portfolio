@@ -1056,7 +1056,7 @@ footer {
     top: 0;
   }
   .headline {
-    height: 68%;
+    height: 74%;
     /*border-radius: 8px;*/
     width: 90%;
     position: relative;
@@ -1149,7 +1149,7 @@ footer {
     background-color: #E4E5E6;
   }
   #wrapper-splash {
-    height: 105vh;
+    height: 100vh;
     background-color: #E4E5E6;
   }
   #heading-portfolio {
