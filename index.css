@@ -1061,7 +1061,7 @@ footer {
     width: 90%;
     position: relative;
     left: 0vw;
-    top: 15vh;
+    top: 10vh;
     box-shadow: 0 48px 76px rgba(0,0,0,0.30), 0 30px 24px rgba(0,0,0,0.22);
   }
   .hero-image {
@@ -1085,10 +1085,12 @@ footer {
   .wrapper-phone {
     width: 40vw;
     left: 2vw;
+    bottom: 2vw;
   }
   .wrapper-email {
     width: 50vw;
     right: 2vw;
+    bottom: 2vw;
   }
   #phone-number a{
     font-size: 3.5vw;
@@ -1143,11 +1145,11 @@ footer {
     font-size: 3.2vw;
   }
   #wrapper-about {
-    height: 105vh;
+    height: 115vh;
     background-color: #E4E5E6;
   }
   #wrapper-splash {
-    height: 102vh;
+    height: 105vh;
     background-color: #E4E5E6;
   }
   #heading-portfolio {
@@ -1169,7 +1171,7 @@ footer {
     font-size: 6vw;
   }
   #wrapper-projects {
-    height: 130vh;
+    height: 150vh;
   }
   #project1, #project2 {
     margin: 60px auto;
@@ -1218,7 +1220,7 @@ footer {
     justify-content: center;
   }
   #wrapper-skills {
-    height: 55vh;
+    height: 70vh;
   }
   .skills-grid {
     width: 80%;
@@ -1237,7 +1239,7 @@ footer {
     font-size: 1em;
   }
   #wrapper-contact {
-    height: 55vh;
+    height: 68vh;
   }
   #email, #phone, #linkedin, #github {
     width: 65%;
