@@ -1006,7 +1006,7 @@ footer {
     top: 0;
   }
   .headline {
-    height: 74%;
+    height: 82%;
     /*border-radius: 8px;*/
     width: 90%;
     position: relative;
@@ -1095,7 +1095,7 @@ footer {
     font-size: 3.2vw;
   }
   #wrapper-about {
-    height: 120vh;
+    height: 125vh;
     background-color: #E4E5E6;
   }
   #wrapper-splash {
@@ -1121,7 +1121,7 @@ footer {
     font-size: 6vw;
   }
   #wrapper-projects {
-    height: 155vh;
+    height: 160vh;
   }
   #project1, #project2 {
     margin: 60px auto;
@@ -1170,7 +1170,7 @@ footer {
     justify-content: center;
   }
   #wrapper-skills {
-    height: 70vh;
+    height: 78vh;
   }
   .skills-grid {
     width: 80%;
@@ -1189,7 +1189,7 @@ footer {
     font-size: 1em;
   }
   #wrapper-contact {
-    height: 70vh;
+    height: 75vh;
   }
   #email, #phone, #linkedin, #github {
     width: 65%;
