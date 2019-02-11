@@ -995,7 +995,7 @@ footer {
 }
 
 /*Mobile responsive media query*/
-@media all and (max-width: 950px) {
+@media all and (max-width: 670px) {
   .home-content-wrapper {
     position: relative;
     width: 90%;
